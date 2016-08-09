@@ -1,0 +1,22 @@
+[{
+    "toc_title": "Documentation",
+    "href": "/",
+    "homepage": "/",
+    "level": 1,
+    "children": [{
+        "href": "/reference/",
+        "homepage": "/reference/",
+        "toc_title": "Reference",
+        "level": 2
+    }, {
+        "href": "/restapi/",
+        "homepage": "/restapi/",
+        "toc_title": "Rest API",
+        "level": 2
+    }, {
+        "href": "/active-directory-reference/",
+        "homepage": "/active-directory-reference/",
+        "toc_title": "ADAL_Reference",
+        "level": 2
+    }]
+}]

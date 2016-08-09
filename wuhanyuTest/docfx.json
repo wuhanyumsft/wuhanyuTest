@@ -3,12 +3,14 @@
     "content": [
       {
         "files": [
-          "**/*.md"
+          "**/*.md",
+          "**/*.yml",
+          "**/*.json"
         ],
         "exclude": [
           "**/obj/**",
-          "wuhanyuTest/**",
-          "**/includes/**"
+          "_themes/**",
+          "**/*-operations.md"
         ]
       }
     ],
@@ -16,20 +18,29 @@
       {
         "files": [
           "**/*.png",
-          "**/*.jpg"
+          "**/*.jpg",
+          "**/*.gif",
+          "**/*.bmp",
+          "**/*.html",
+          "_themes/**"
         ],
         "exclude": [
           "**/obj/**",
-          "wuhanyuTest/**",
-          "**/includes/**"
+          "_themes/DocPacker/**"
         ]
       }
     ],
-    "overwrite": [],
-    "externalReference": [],
-    "globalMetadata": {},
-    "fileMetadata": {},
-    "template": [],
-    "dest": "wuhanyuTest"
+    "dest": "./",
+    "template": "docs.html",
+    "globalMetadata": {
+      "breadcrumb_path": "/breadcrumb.json",
+      "locale": "en-us",
+      "_appTitle": "Hello Rest Api",
+      "_mockServerUrl": "https://apiexproxy.azurewebsites.net/svc"
+    },
+    "overwrite":[
+     {
+        "files": ["**/*-operations.md"]
+     }]
   }
 }
